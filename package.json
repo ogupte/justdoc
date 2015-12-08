@@ -1,6 +1,6 @@
 {
   "name": "justdoc",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A doc gen command-line tool and library which dumps block comments in a javascript project to a docs directory of the same structure.",
   "main": "index.js",
   "scripts": {
