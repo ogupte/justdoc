@@ -42,11 +42,13 @@ function justdoc (opts) {
 				return markdownDoc;
 			}, '');
 
-			self.push(new gutil.File({
-				base: base,
-				path: path.join(base, relative),
-				contents: new Buffer(contents, 'utf8')
-			}));
+			if (contents.length) {
+				self.push(new gutil.File({
+					base: base,
+					path: path.join(base, relative),
+					contents: new Buffer(contents, 'utf8')
+				}));
+			}
 		});
 		done();
 	});
