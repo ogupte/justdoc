@@ -74,13 +74,13 @@ returns the component data
 
 If the comment doesn't start with `=` then it won't be included in the doc output.
 
-The first line can also be used to tell `justdoc` to ignore the beginning few character of each line. For example, if you want to start evey line with `*_`, then specify it after the `=` to make sure that `justdoc` will ignore it.
+The first line can also be used to tell `justdoc` to ignore the beginning few character of each line. For example, if you want to start evey line with ` * ` (space+asterisk+space), simply place them after the `=` so that `justdoc` ignores the leading characters.
 
 ```
-/*=*_
-*_## function - getData()
-*_returns the component data
-*/
+/*= * 
+ * ## function - getData()
+ * returns the component data
+ */
 ```
 
-This pattern will work with any string of characters (even spaces and tabs). Useful for adding padding to your comments without affecting the doc output.
+This pattern will work with any string of characters (even spaces and tabs). Useful for trimming or padding your comments without affecting the doc output.
